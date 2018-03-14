@@ -1,0 +1,10 @@
+#!/bin/bash
+#Skript, mis väljastab minu muljeid
+
+echo "Alari Niinemäe "
+echo "ISP117"
+echo "normaalne"
+echo "normaalne, hetkel saab hakkama"
+
+#
+# skripti lõpp
