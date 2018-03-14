@@ -1,4 +1,9 @@
 #!/bin/bash
 #Skript, mis väljastab kastuajale tervitust
 
-echo "Tere! Alari"
+echo -n "Tere, "	# ilma reavahetuseta Tere,
+echo -n "Alari"		# ilma reavahetuseta Alari
+echo "!"		# reavahetusega !
+
+#
+# skripti lõpp
