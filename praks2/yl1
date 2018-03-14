@@ -1,0 +1,4 @@
+#!/bin/bash
+#Skript, mis väljastab kastuajale tervitust
+
+echo "Tere! Alari"
