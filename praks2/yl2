@@ -1,10 +1,12 @@
 #!/bin/bash
-#Skript, mis väljastab minu muljeid
+#Skript, mis väljastab masinas olevate kasutajate nimekiri
+#
+#Skripti algus
+#
 
-echo "Alari Niinemäe "
-echo "ISP117"
-echo "normaalne"
-echo "normaalne, hetkel saab hakkama"
-
+who | cut -f1  -d" " | cut -f2 -d"." > perenimi # lõikame perenimi, mis on  2. element peale punkti ja salvestame faili
+who | cut -f1  -d" " | cut -f1 -d"." > eesnimi	# lõikame eesnimi, mis on 1. element enne  punkti ja salvestame faili
+paste -d"." perenimi eesnimi > nimed 	# kleebime need failid vastavas järjekorras kokku
+cat nimed | sort | uniq # sorteerime väljundi ja võtame korduvad välja
 #
 # skripti lõpp
