@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#Script, mis väljastab mitu päeva antud hetkel masin on tööl
+#
+# 
+echo -n "System "
+echo -n `hostname`
+echo -n " "
+echo `uptime -p`
+#
+#Lõpp
