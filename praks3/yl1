@@ -11,4 +11,5 @@ echo -n `date +"%d.%m.%Y"`
 # kellaaeg
 echo -n " ja kell on "
 echo `date +"%H:%M"`
-
+#
+#lõpp
