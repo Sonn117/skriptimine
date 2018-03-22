@@ -1,8 +1,12 @@
 #!/bin/bash
 #Skript, mis väljastab kastuajale tervitust
+#
+#Skripti algus
+#
 
-echo -n "Tere, "	# ilma reavahetuseta Tere,
-echo -n "Alari"		# ilma reavahetuseta Alari
+echo -n "Tere "	# ilma reavahetuseta Tere,
+echo -n `who am i | cut -c1 | tr [:lower:] [:upper:]` 		# iõika esimene täht ja muuda suureks
+echo -n `who am i | cut -c2- | cut -f1 -d" "` #lõika kõik tähed alates 2-st
 echo "!"		# reavahetusega !
 
 #
