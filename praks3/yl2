@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#Script, mis otsib var kataloogis kasutajale kättesaadavad .log lõpuga failid
+#
+find /var/ -name "*.log" 2>>/dev/null -exec wc -l {} \; | sort -n -r #leiab /var/ kaustast *.log failid ja vead saadab /dev/null-i -exec ja siis wordcount -l näitab mitu faili kokku on | sorteerib kahanevalt 
+#
+#Lõpp 
