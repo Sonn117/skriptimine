@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#
+#Skript, mis küsib kasutaja käest täisnurkse kolmnurga küljede väärtused, mis võivad olla nii täis-kui ka komaga, ehk reaalarvud.
+#
+echo -n "A külg:"
+read a
+echo -n "B külg:"
+read b
+a_ruut=`echo "scale=2;($a^2)" | bc`
+b_ruut=`echo "scale=2;($b^2)" | bc`
+c_ruut=`echo "scale=2;($a_ruut+$b_ruut)" | bc`
+vastus=`echo "scale=2;sqrt($c_ruut)" | bc`
+echo "Tehted tehtud, kolmnurga hüpotenuus on $vastus ."
+echo -n "Sooritatud tehted:"
+echo "Esimese külje ruut: $a_ruut"
+echo "Teise külje ruut: $b_ruut"
+echo "A ja B külje ruut: $c_ruut"
+echo "Ruutude summa ruutjuur: $vastus"
+#
+#lõpp
+#
