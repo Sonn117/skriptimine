@@ -6,6 +6,7 @@
 #
 echo -n "Sisesta oma ees- ja perenimi:"
 read  Eesnimi Perenimi
-echo -n "Tere tulemast, $Eesnimi $Perenimi"
+echo "Sinu eesnimi on $Eesnimi ja perenimi on $Perenimi"
 #
 #
+#Lõpp
