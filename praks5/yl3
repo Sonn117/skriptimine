@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#Reisi skript
+#
+#
+echo "P 0, E 1, T 2, K 3, N 4, R 5, L 6, P 7"
+echo "Kuna soovid ära sõita?"
+read paev
+echo "Mitu ööpäeva olete ära?"
+read paevad
+a=$(($paevad % 7))
+back=$(($paev + $a))
+echo "Jõuad tagasi: $back"
+#
+#lõpp
