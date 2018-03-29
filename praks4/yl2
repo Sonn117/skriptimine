@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+#Script, mis oleks abiks kokkadele küpsise tordi valmistamiseks
+#
+#Kandiku pindala
+echo "Kandiku pikkus:"
+read pikkus
+echo "Kandiku laius:"
+read laius
+echo "Küpsise pikkus:"
+read kpikkus
+echo "Küpsise laius:"
+read klaius
+echo "Küpsist/pakk:"
+read mitu
+echo "Kihtide arv:"
+read kihtide_arv
+
+#Kandiku pindala
+pindala=`expr $pikkus \* $laius`
+#Küpsiste pindala
+kogus=`expr $kpikkus \* $klaius`
+#Mitu küpsist ühes kihis
+yheskihis=`expr $pindala / $kogus`
+
+echo "Kandiku pindala on $pindala cm ja küpsiste pindala $kogus cm, ühes kihis on $yheskihis küpsist."
+
+#Mitu pakki küpsiseid on vaja ühe kihi jaoks
+yheskihispakke=`expr $yheskihis / $mitu`
+
+#Pakke kokku
+kokku=`expr $yheskihispakke \* $kihtide_arv`
+
+#Palju pakke vaja on
+echo "Teil on vaja $kokku küpsisepakkipakki"
+
