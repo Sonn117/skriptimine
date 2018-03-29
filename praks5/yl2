@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#script, küsib kasutaja käest kõik kolmnurga küljede väärtused, mis võivad olla nii täis- kui kakomaga, ehk reaalarvud.
+#
+echo
+echo -n "Sisesta A külje väärtus: "
+read a
+echo -n "Sisesta B külje väärtus: "
+read b
+echo -n "Sisesta C külje väärtus: "
+read c
+p=`echo "scale=2;($a+$b+$c)/2" | bc`
+s=`echo "scale=2;sqrt ($p*($p-$a)*($p-$b)*($p-$c))" | bc`
+echo "Pindala = $s"
+#
+#lõpp
