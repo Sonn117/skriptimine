@@ -3,13 +3,13 @@
 #Script, mis oleks abiks kokkadele küpsise tordi valmistamiseks
 #
 #Kandiku pindala
-echo "Kandiku pikkus:"
+echo "Kandiku pikkus (cm):"
 read pikkus
-echo "Kandiku laius:"
+echo "Kandiku laius (cm):"
 read laius
-echo "Küpsise pikkus:"
+echo "Küpsise pikkus (cm):"
 read kpikkus
-echo "Küpsise laius:"
+echo "Küpsise laius (cm):"
 read klaius
 echo "Küpsist/pakk:"
 read mitu
