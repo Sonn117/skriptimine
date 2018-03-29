@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#
+#Skript, mis küsib kasutaja käest tema nimi ja tervitab teda
+#
+#
+echo -n "Sisesta oma ees- ja perenimi:"
+read  Eesnimi Perenimi
+echo -n "Tere tulemast, $Eesnimi $Perenimi"
+#
+#
