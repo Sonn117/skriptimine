@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+#Algus
+#
+echo -n "Sisestage kuu (1-12): "
+read kuu
+
+if [ $kuu -ge 1 -a $kuu -le 2 ] #Kui kuu on vahemikus 1-2
+then
+	echo "Praegu on talv"
+elif [ $kuu -ge 3 -a $kuu -le 5 ] #Kui kuu on vahemikus 3-5
+then
+	echo "Praegu on kevad"
+elif [ $kuu -ge 6 -a $kuu -le 8 ] #Kui kuu on vahemikus 6-8
+then
+	echo "Praegu on suvi"
+elif [ $kuu -ge 9 -a $kuu -le 11 ] #Kui kuu on vahemikus 9-11
+then
+	echo "Preagu on sügis"
+elif [ $kuu -eq 12 ] #Kui sisestatud number on võrdne 12-ga
+then
+	echo "Praegu on talv"
+else
+	echo "Sellist kuud pole olemas ( ͡° ͜ʖ ͡°)"
+fi
