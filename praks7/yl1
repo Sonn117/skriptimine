@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# Skript, mis küsib kasutaja käest tema vanuse
+#
+echo -n "Kui vana sa oled? "
+read vanus
+if [ $vanus -ge 0 -a $vanus -le 11 ] #vanus 0-11
+	then
+		echo "Sa oled laps"
+####################################
+		elif [ $vanus -ge 11 -a $vanus -le 18 ] #vanus 11-18
+			then
+				echo "Sa oled nooruk"
+######################################################
+	elif [ $vanus -ge 18 -a $vanus -le 63 ] #vanus 18-63
+		then
+			echo "Sa oled täiskasvanu"
+############################################
+elif [ $vanus -ge 63 ] #vanus 63+
+	then
+		echo "Sa oled vanur"
+###
+else echo "vigane sisend"
+fi
