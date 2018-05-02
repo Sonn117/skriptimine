@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#Script, mis oleks abiks bussi ekskursioonide korraldajale
+#
+#
+echo -n "Sisesta reisijate kogus: " #sisestad reisijate koguse
+read reisijad
+echo -n "Kui palju on bussis istekohti?: " #sisestad istekohtade arvu
+read kohad
+#
+bussid=$(($reisijad / $kohad))
+ylejaanud=$(($reisijad % $kohad))
+#
+if test $ylejaanud -gt 0
+then
+	bussid=$(($bussid + 1))
+fi
+#
+echo "Kokku on vaja $bussid täisbussi"
+#
+#lõpp
