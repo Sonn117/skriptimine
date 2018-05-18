@@ -2,9 +2,9 @@
 #
 echo -n "Sisesta ridade arv: "
 read rida
-	for (( r=0; r<$rida; r++ ))
+	for (( r=$rida; r>0; r-- ))
 do
-	 for (( v=0; v<=$r; v++ ))
+	 for (( v=1; v<=$r; v++ ))
  do
   	echo -n "* "
  done
